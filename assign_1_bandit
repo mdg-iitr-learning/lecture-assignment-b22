@@ -1,0 +1,62 @@
+connected by using ssh -p 2220 bandit0@bandit.labs.overthewire.org
+bandit0-->bandit0
+
+found readme folder by ls
+opened it by cat readme
+bandit1-->boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+found file names -
+opened it by cat ./-
+bandit2-->CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+found file named "spaces in this filename"
+used \ for giving space
+bandit3-->UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+there was hidden file named .hidden in inhere folder
+opened by cat ./.hidden
+bandit4-->pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+not getting file type by file *
+then used file ./-* to get list of all file starting with - 
+file 7 hass askii text
+bandit5-->koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+find file whose size is 1033c
+maybehere07 .file2
+bandit6-->DXjZPULLxYr17uwoI01bNLQbtFemEgo
+
+find / -user bandit7 -group bandit6 -size 33c
+I got too many files with permittion denied but one has the path we required
+to filter i used 2>/dev/null
+bandit7-->HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+found a large text file 
+cat data.txt | grep millionth
+bandit8-->cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+if the life is repeated and any other line is between the two then uniq -u assume all three line to be unique
+for this first we have to sort and then find uniwue line
+sort data.txt | unique -u
+bandit9-->UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+data.txt |grep "=" giving errror binary file matches
+because the file starts with non-text data so it treats the file as binary file
+used strings before data.txt
+strings data.txt | grep "="
+bandit10-->truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+the data was written in base64 
+to decode this use base64 -d
+bandit11-->IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+tr used to translate 
+cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+bandit12-->5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+
+
+
+
+
+
