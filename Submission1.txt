@@ -1,0 +1,88 @@
+          Bandit Wargames
+Level 0
+Connected to ssh using command:
+ssh <username>@<ip> -p <portnumber>
+Then entered the password already given
+
+Level 1
+Home Directory contains a readme file.
+cat readme opens the contents of the file.
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+Password for the next level.
+
+Level 2
+It has file named '-' stored in the home directory which has the password.
+Simply calling cat - doesn't shows us the contents of the file as it considers - as a synonym for standard input.
+So we call cat ./- to open the file.
+Password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+Level-3
+It has a file named "spaces in this filename" obviously telling us the challenge of this level.
+So we use cat "spaces in this filename" to get the password
+Password : UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Level-4
+cd inhere takes us to the inhere directory
+then cat .hidden displays us the contents of the hidden file .hidden 
+Password:pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+Level-5:
+Using command 
+file ./-file0* 
+we display the file types of all the files and find that only one particular file contains ASCII text. That is the password
+Then we use cat,
+Password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+Level-6:
+Using the command 
+find . -size 1033c 
+We search for a file with exactly 1033 bytes and we get that only one file possess such a property.
+then we use cat comand to display its contents which gives us the password
+Password : DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Level-7:
+Using command 
+find / -user bandit7 -group bandit6 -size 33c
+We filter out all files having the respective owners and having size 33 bytes.
+Then we use cat to get the contents of that particular file:
+Password: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+Level-8:
+Using command 
+cat data.txt | grep millionth
+Password next to word millionth
+Password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+Level-9:
+Using command 
+sort data.txt | uniq -c 
+We first sort the data so that the uniq command can catch the repeated files and display that
+The only non-repeated file contains the password:
+Password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR 
+
+Level-10:
+Using command:
+strings data.txt | grep ====== 
+We Print only readable strings which have ====== in the start.
+Password : truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+Level-11:
+base64 -d data.txt 
+Using this command we decode the base64 file to ASCII text type.
+Password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Level-12:
+Using command:
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' 
+We rotate the characters by 13 positions to reveal:
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu 
+
+
+
+
+
+
+
+
+
+
