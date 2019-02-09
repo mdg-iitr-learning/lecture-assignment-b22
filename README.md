@@ -14,3 +14,7 @@ Follow thi procedure to submit assignments:
 3. Add work in folder named {`assn_[lec_num]_[lecttopic]`}
 4. Submit a pull request from `user/lecture_assignment_b22/name` to `mdg-iitr/lecture_assignment_b22/name` with proper description.
 5. Branches for each b22 have been already made in this repo.
+
+### It includes:
+ 1.Bandit Level 1-12
+ 2.Unity 3D Project
