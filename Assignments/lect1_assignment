@@ -1,1 +1,50 @@
+Level 0:
+used ssh username@website -p [port] to login
 
+level 0-1:
+Password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+used cat command
+
+level 1: 
+Password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+used cat ./-
+
+level 2:
+Password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+Put filename in ""
+
+level 3:
+Password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+Used ls -a to view hidden directories ,cd,cat
+
+level 4
+Password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+Used strings with multiple filesname as arguments
+
+level 5
+Password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+Used find command with -size flag
+
+level 6:
+Password: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+Used -user, -group, -size flags with find command
+
+level 7:
+Password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+Used grep command and piping
+
+level 8:
+Password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+Used sort command to sort the string and piped it through uniq -c
+
+level 9:
+Password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+Used strings command with grep
+
+level 10:
+Password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+Used online base64 decoders
+
+level 11:
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+Used rot13 decoder online
