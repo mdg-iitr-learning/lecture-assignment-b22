@@ -31,4 +31,5 @@ finds the line that occurs only once.The command used is (cat data.txt | sort | 
 
 11)level 11 password:IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR I had decode data using the command (base64 -d data.txt)
 
-12)password:5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu I decoded rot13 text using the command (echo "Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh"|tr ‘n-za-mN-ZA-M’ ‘a-zA-Z’)
+12)password:5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu I decoded rot13 text using the command 
+(echo "Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh"|tr ‘n-za-mN-ZA-M’ ‘a-zA-Z’)
