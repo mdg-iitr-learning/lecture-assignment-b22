@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<CheckBoxPreference
+    android:id="@+id/checkbox"
+    android:key="check"
+    android:title="Temperature Units"
+    android:summary="Default units of temperature"/>
+</PreferenceScreen>
