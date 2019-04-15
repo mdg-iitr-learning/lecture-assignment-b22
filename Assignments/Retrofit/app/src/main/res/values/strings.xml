@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="button">Button</string>
+    <string name="submit">Submit</string>
+    <string name="city">City :</string>
+    <string name="lat">Lat.</string>
+    <string name="lon">Lon.</string>
+    <string name="enter_postal_code">Enter Postal Code</string>
+    <string name="postal_zip_code">Postal/Zip Code</string>
+    <string name="temp">Temp(K)</string>
+    <string name="pressure">Pressure(hPa)</string>
+    <string name="humidity">Humidity%</string>
+    <string name="vi">Visibility</string>
+    <string name="description">Description</string>
+    <string name="type">Type</string>
+    <string name="c">Country</string>
+    <string name="wind_speed_m_s">Wind Speed(m/s)</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sun">Sunset</string>
+    <string name="weather">Weather</string>
+    <string name="weather_conditions">Weather Conditions</string>
+    <string name="s">Settings</string>
+</resources>
