@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/stats_dest">
+
+    <fragment
+        android:id="@+id/stats_dest"
+        android:tag="STATS_FRAGMENT"
+        android:name="com.amishgarg.wartube.Activity.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/posts_dest"
+        android:name="com.amishgarg.wartube.Activity.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts" ></fragment>
+    <activity
+        android:id="@+id/welcome_dest"
+        android:name="com.amishgarg.wartube.Activity.WelcomeActivity"
+        android:label="activity_welcome"
+        tools:layout="@layout/activity_welcome" />
+    <fragment
+        android:id="@+id/new_post_dest"
+        android:name="com.amishgarg.wartube.Activity.NewPostFragment"
+        android:label="fragment_new_post"
+        tools:layout="@layout/fragment_new_post" />
+    <fragment
+        android:id="@+id/post_detail_dest"
+        android:name="com.amishgarg.wartube.Activity.PostDetailFragment"
+        android:label="PostDetaiFragment" />
+    <fragment
+        android:id="@+id/profile_dest"
+        android:name="com.amishgarg.wartube.Activity.ProfileFragment"
+        android:label="ProfileFragment" />
+    <activity
+        android:id="@+id/signup_dest"
+        android:name="com.amishgarg.wartube.Activity.EmailSignUpActivity"
+        android:label="EmailSignUpActivity" />
+</navigation>

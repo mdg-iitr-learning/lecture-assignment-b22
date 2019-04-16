@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/post_author_icond"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/post_author_named"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Amish Garg"
+                        android:textColor="#292F33"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="3dp"
+                        android:layout_height="3dp"
+                        android:layout_above="@+id/post_textd"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@+id/post_author_named"
+                        android:background="?android:attr/listDivider"
+                        android:gravity="center_vertical|center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/post_timestampd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/post_textd"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@+id/divider"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="1h"
+                        android:textColor="#8899A6"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/post_textd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/post_author_named"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="My girlfriend is not even gone for more than 24h (traveling) and I managed to make the apartment look like this:"
+                        android:textColor="#292F33" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/post_photod"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/like_buttond"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+
+                        android:layout_alignParentStart="true"
+
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:button="@null"
+                        android:stateListAnimator="@animator/scale"
+                        android:checked="false"
+                        android:background="@drawable/instagram_heart_selector"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/post_num_likesd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/like_buttond"
+                        android:text="0" />
+
+                    <ImageView
+                        android:id="@+id/comment_buttond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/post_num_likesd"
+                        app:srcCompat="@drawable/ic_baseline_comment_24px" />
+
+                    <TextView
+                        android:id="@+id/post_num_comd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/comment_buttond"
+                        android:text="0" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#8899a6" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Comments"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8899a6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/comment_item">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#F2F2F2">
+
+        <EditText
+            android:id="@+id/new_post_comment"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/post_comment_button"
+            android:ems="10"
+            android:hint="Add a comment"
+            android:inputType="textMultiLine" />
+
+        <ImageButton
+            android:id="@+id/post_comment_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_right_arrow" />
+
+    </RelativeLayout>
+</RelativeLayout>

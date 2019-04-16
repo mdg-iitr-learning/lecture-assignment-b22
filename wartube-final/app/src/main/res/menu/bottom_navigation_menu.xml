@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/posts_dest"
+        android:title="Posts"
+        android:icon="@drawable/ic_baseline_forum_24px"/>
+
+    <item android:id="@+id/stats_dest"
+        android:title="Stats"
+        android:icon="@drawable/ic_baseline_assessment_24px"/>
+
+    <item android:id="@+id/profile_dest"
+        android:title="My Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24px"/>
+</menu>
